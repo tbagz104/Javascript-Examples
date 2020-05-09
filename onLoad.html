@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date&Time</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+        function dateTime() {
+
+            //Date
+            var today = new Date();
+            var currentDate = today.getDate() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear();
+
+            today = currentDate;
+            document.write(today);
+            document.write("<br>");
+
+            //Time
+            var currentTime = new Date();
+            var time = currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + currentTime.getSeconds();
+
+            currentTime = time; 
+            document.write(currentTime);
+        }
+        window.onload = dateTime;
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
